@@ -6,7 +6,7 @@ body{
     box-sizing: border-box;
 }
 .nev{
-	background-color: #EEE2DC;
+	background-color: #092635;
 	width: 100%;
 	height: 60px;
 	display: flex;
@@ -22,35 +22,28 @@ body{
 .nev ul li{
 	display: inline-block;
     list-style: none;
-    margin: 5px 30px;
+    margin: 5px 40px;
 }
 .nev ul li a{
-	color: #AC3B61;
+	color: #9EC8B9;
 	text-decoration: none;
 	font-size: 18px;
 }
 
 .login-btn{
-	/* display: block;
-  	margin: 50px auto;
-   	width: fit-content;
-  	border: 1px solid #ff004f;
-  	padding: 14px 50px;
-  	border-radius: 6px;
-  	text-decoration: none;
-  	color: white; */
   	display: block;
   	margin: 10px 30px;
-  	border: 2px solid #AC3B61;
+  	border: 2px solid #9EC8B9;
   	padding: 10px ;
   	border-radius: 7px;
-	transition: background 0.5s;
+	transition: background 0.25s;
 }
 .login-btn:hover{
-	background: #EDC7B7;
+	background: #1B4242;
 }
 .login-btn a{
-	color: #AC3B61;
+	color: #9EC8B9;
 	text-decoration: none;
 	font-size: 18px;
+	transition: color 0.5s;
 }
