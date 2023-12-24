@@ -13,7 +13,7 @@ body{
 	justify-content: space-between;
 }
 .nev img{
-	padding: 5px;
+	width: 170px;
 }
 .nev ul{
 	display: flex;
@@ -24,26 +24,34 @@ body{
     list-style: none;
     margin: 5px 40px;
 }
+
 .nev ul li a{
-	color: #9EC8B9;
+	color: white;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 15px 0;
+	padding: 12px 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 .login-btn{
   	display: block;
   	margin: 10px 30px;
-  	border: 2px solid #9EC8B9;
-  	padding: 10px ;
-  	border-radius: 7px;
-	transition: background 0.25s;
-}
-.login-btn:hover{
-	background: #1B4242;
+  	border: 2px solid white;
+  	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 45px;
+	text-transform: uppercase;
+  	border-radius: 20px;
 }
 .login-btn a{
-	color: #9EC8B9;
+	color: white;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 14px;
 	transition: color 0.5s;
+}
+.login-btn a:hover{
+	color: white;
 }
