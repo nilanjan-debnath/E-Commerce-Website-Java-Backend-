@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="index_header.css"/>
+<link rel="stylesheet" href="CSS/index_header.css"/>
 </head>
 <body>
 <div class="nev">
@@ -16,7 +16,7 @@
 		<li><a href="#">About</a></li>
 		<li><a href="#">Contact</a></li>
 	</ul>
-	<div class="login-btn"><a href="login_signup.jsp">Sign In / Up</a></div>
+	<div class="login-btn"><a href="SignInUp.jsp">Sign In / Up</a></div>
 </div>
 </body>
 </html>

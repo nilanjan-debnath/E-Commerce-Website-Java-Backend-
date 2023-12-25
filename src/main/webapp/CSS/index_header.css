@@ -1,31 +1,36 @@
 @charset "UTF-8";
-body{
+
+body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Popins', sans-serif;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-.nev{
+
+.nev {
 	background-color: #092635;
 	width: 100%;
 	height: 60px;
 	display: flex;
 	justify-content: space-between;
 }
-.nev img{
+
+.nev img {
 	width: 170px;
 }
-.nev ul{
+
+.nev ul {
 	display: flex;
 	flex-direction: row;
 }
-.nev ul li{
+
+.nev ul li {
 	display: inline-block;
-    list-style: none;
-    margin: 5px 40px;
+	list-style: none;
+	margin: 5px 40px;
 }
 
-.nev ul li a{
+.nev ul li a {
 	color: white;
 	text-decoration: none;
 	font-size: 14px;
@@ -36,22 +41,24 @@ body{
 	text-transform: uppercase;
 }
 
-.login-btn{
-  	display: block;
-  	margin: 10px 30px;
-  	border: 2px solid white;
-  	font-size: 14px;
+.login-btn {
+	display: block;
+	margin: 10px 30px;
+	border: 2px solid white;
+	font-size: 14px;
 	font-weight: bold;
 	padding: 12px 45px;
 	text-transform: uppercase;
-  	border-radius: 20px;
+	border-radius: 20px;
 }
-.login-btn a{
+
+.login-btn a {
 	color: white;
 	text-decoration: none;
 	font-size: 14px;
 	transition: color 0.5s;
 }
-.login-btn a:hover{
+
+.login-btn a:hover {
 	color: white;
 }
