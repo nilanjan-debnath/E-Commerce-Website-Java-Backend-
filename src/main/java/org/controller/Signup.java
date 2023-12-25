@@ -36,8 +36,10 @@ public class Signup extends HttpServlet {
 				
 				int rowCount =ps.executeUpdate();
 				if(rowCount>0) {
-					RequestDispatcher rd=request.getRequestDispatcher("SignInUp.jsp");
-					rd.forward(request, response);
+//					RequestDispatcher rd=request.getRequestDispatcher("SignInUp.jsp");
+//					rd.forward(request, response);
+					response.sendRedirect("SignInUp.jsp");
+					
 				}else {
 					out.println("<font color=red size=18> Sign Up failed!!<br>");
 				}
