@@ -7,6 +7,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <title>About Us - ShopBag</title>
 </head>
 <div class="body2">
@@ -64,5 +65,43 @@
 
     </section>
 </div>
+<footer id="foot">
+        <div class="box">
+            <h3>Get Know Us</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Let us Help You</h3>
+            <ul>
+                <li>Your Account</li>
+                <li>Returns Center</li>
+                <li>100% Purchase Protection</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Make Money With Us</h3>
+            <ul>
+                <li>Sell on ShopNest</li>
+                <li>Sell under ShopNest Accelerator</li>
+                <li>ShopNest Gobal Selling</li>
+                <li>Become an Affiliate</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Social Media</h3>
+            <ul id="icons">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="JS/response.js"></script>
 </html>
 

@@ -33,6 +33,7 @@ public class Signup extends HttpServlet {
 				ps.setString(1, rname);
 				ps.setString(2, rmail);
 				ps.setString(3, rpass);
+				
 				request.setAttribute("signup_status", false);
 				RequestDispatcher dispatcher = request.getRequestDispatcher("SignInUp.jsp");
 				int rowCount =ps.executeUpdate();
@@ -43,12 +44,12 @@ public class Signup extends HttpServlet {
 				}
 		        dispatcher.forward(request, response);
 			} catch (SQLException e) {
-				request.setAttribute("signup_status", false);
+				
 			}
 		} catch (ClassNotFoundException e) {
-			request.setAttribute("signup_status", false);
+			
 		}
-		request.setAttribute("signup_status", false);
+		
 	}
 
 }

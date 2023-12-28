@@ -70,7 +70,6 @@
     signInButton.addEventListener('click', () => {
         container.classList.remove("right-panel-active");
     });
-    
     var singupStatus = '<%= request.getAttribute("signup_status") %>';
     if (singupStatus === 'true') {
     	var myDiv = document.getElementById('status_msg');

@@ -22,8 +22,7 @@ public class Signin extends HttpServlet {
 		
 		String lemail=request.getParameter("lemail");
 		String lpass=request.getParameter("lpass");
-		request.setAttribute("signin_status", false);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("indexHeader.jsp");
+		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 //			PrintWriter out=response.getWriter();
@@ -32,21 +31,22 @@ public class Signin extends HttpServlet {
 				PreparedStatement ps=con.prepareStatement("select name from user where email=? and password=?");
 				ps.setString(1, lemail);
 				ps.setString(2, lpass);
+				
+				RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
 				ResultSet rs =ps.executeQuery();
 				if(rs.next()) {
 					request.setAttribute("signin_status", true);
-//					response.sendRedirect("indexHeader.jsp");
 				}else {
-					 request.setAttribute("signin_status", false);
+					request.setAttribute("signin_status", false);
 				}
-		        dispatcher.forward(request, response);
-			} catch (SQLException e) {
 				dispatcher.forward(request, response);
+			} catch (SQLException e) {
+				
 			}
 		} catch (ClassNotFoundException e) {
-			dispatcher.forward(request, response);
+			
 		}
-		dispatcher.forward(request, response);
+		
 	}
 
 }
