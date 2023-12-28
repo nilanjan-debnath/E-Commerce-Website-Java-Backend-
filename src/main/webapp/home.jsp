@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/home.css">
-    <link rel="stylesheet" href="CSS/slide.css">
+    <link rel="stylesheet" href="CSS/Slider.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
@@ -250,16 +250,34 @@
         </div>
     </footer>
     <!-- end of the footer -->
-    <script>
-        // this is the slider code.
-        let counter = 1;
-        setInterval(function () {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
-            }
-        }, 5000);
-    </script>
+   
+     <script >
+     let counter = 1;
+     setInterval(function () {
+         document.getElementById('radio' + counter).checked = true;
+         counter++;
+         if (counter > 4) {
+             counter = 1;
+         }
+     }, 5000);
+     //------------------------------------------
+     console.log("read");
+     function changeContent() {
+         var newContent = "Sign Out";
+         localStorage.setItem('myDivContent', newContent);
+         document.getElementById('sign_txt').innerHTML = newContent;
+     }
+     var storedContent = localStorage.getItem('myDivContent');
+     if (storedContent) {
+		document.getElementById('sign_txt').innerHTML = storedContent;
+	}
+     var signinStatus = '<%= request.getAttribute("signin_status") %>';
+     console.log(signinStatus);
+     if (signinStatus === 'true') {
+     	changeContent();
+     }else if(signinStatus === 'false'){
+     	window.location.href = 'SignInUp.jsp';
+     }
+     </script>
 </body>
 </html>

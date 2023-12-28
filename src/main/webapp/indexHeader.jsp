@@ -16,17 +16,26 @@
 		<li><a href="about.jsp">About</a></li>
 		<li><a href="contact.jsp">Contact</a></li>
 	</ul>
-	<div class="login-btn"><a id="sign_txt" href="SignInUp.jsp">Sign In / Up</a></div>
+	<div class="login-btn" ><a id="sign_txt" href="SignInUp.jsp" >Sign In / Up</a></div>
 </div>
 </body>
 <script>
-    var signinStatus = '<%= request.getAttribute("signin_status") %>';
-    if (signinStatus === 'true') {
-    	var myDiv = document.getElementById('sign_txt');
-    	myDiv.innerHTML = "Sign Out";
-    	window.location.href = 'home.jsp';
-    }else if(signinStatus === 'false'){
-    	window.location.href = 'SignInUp.jsp';
-    }
+	
+	function signout_check(){
+		consol.log("check");
+		if (storedContent){
+			if(confirm("Confirm Your Sign Out!")){
+				clearLocalStorage();
+			}
+		}else{
+			window.location.href = 'SignInUp.jsp';
+		}
+	}
+	function clearLocalStorage() {
+	    localStorage.clear();
+	    document.getElementById('sign_txt').innerHTML = 'Sign In / Up';
+	}
+    
+    })
 </script>
 </html>
