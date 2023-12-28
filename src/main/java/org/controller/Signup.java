@@ -1,7 +1,7 @@
 package org.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+//import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -26,29 +26,29 @@ public class Signup extends HttpServlet {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			PrintWriter out=response.getWriter();
+//			PrintWriter out=response.getWriter();
 			try {
 				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecom", "root", "1721");
 				PreparedStatement ps=con.prepareStatement("insert into user values (?, ?, ?)");
 				ps.setString(1, rname);
 				ps.setString(2, rmail);
 				ps.setString(3, rpass);
-				
+				request.setAttribute("signup_status", false);
+				RequestDispatcher dispatcher = request.getRequestDispatcher("SignInUp.jsp");
 				int rowCount =ps.executeUpdate();
 				if(rowCount>0) {
-//					RequestDispatcher rd=request.getRequestDispatcher("SignInUp.jsp");
-//					rd.forward(request, response);
-					response.sendRedirect("SignInUp.jsp");
-					
+					request.setAttribute("signup_status", true);
 				}else {
-					out.println("<font color=red size=18> Sign Up failed!!<br>");
+					request.setAttribute("signup_status", false);
 				}
+		        dispatcher.forward(request, response);
 			} catch (SQLException e) {
-				e.printStackTrace();
+				request.setAttribute("signup_status", false);
 			}
 		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+			request.setAttribute("signup_status", false);
 		}
+		request.setAttribute("signup_status", false);
 	}
 
 }

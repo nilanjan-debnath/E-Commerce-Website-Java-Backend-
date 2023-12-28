@@ -10,6 +10,7 @@
 <script src="https://kit.fontawesome.com/f4939b9561.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<div id=status_msg></div>
 	<div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="Signup" method="post">
@@ -57,7 +58,6 @@
         </div>
     </div>
 </body>
-</html>
 <script>
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
@@ -70,4 +70,13 @@
     signInButton.addEventListener('click', () => {
         container.classList.remove("right-panel-active");
     });
+    
+    var singupStatus = '<%= request.getAttribute("signup_status") %>';
+    if (singupStatus === 'true') {
+    	var myDiv = document.getElementById('status_msg');
+    	myDiv.innerHTML = "Thank You for Signing Up<br>Now Sign In to continue.";
+    }else if(singupStatus === 'false'){
+    	myDiv.innerHTML = "Something went wrong<br>Please try again.";
+    }
 </script>
+</html>
