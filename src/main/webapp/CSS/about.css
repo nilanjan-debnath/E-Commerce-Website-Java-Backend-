@@ -1,0 +1,151 @@
+/* STRAT Of the CSS OF NAV BAr */
+@charset "UTF-8";
+.body2 {
+    background-color: #9EC8B9;
+    color: #092635;
+    margin: 0;
+    padding: 0;
+}
+
+.header2 {
+    text-align: center;
+    padding: 20px;
+	background-image: url('image/image2.jpg.png'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-position:100%;
+    background-repeat: no-repeat;
+    color: #092635;
+}
+
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section h2 {
+    color: #092635;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 0 20px; /* Add padding for better readability */
+}
+
+.span {
+    font-size: 1.2em; /* Adjust the font size as needed */
+    color: #FFA500; /* Orange color */
+    font-weight: bold; /* Make the text bold if desired */
+}
+
+
+.header2 h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(1, 205, 66, 0.5);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+	font-weight: bolder;
+}
+
+.header2 p {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(1, 2, 14, 0.3);
+    margin-top: 0;
+}
+
+h2{
+	color: #092635;
+}
+
+.section_img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+p, ul {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    border-left: 2px solid #092635;
+    padding-left: 10px;
+    font-style: italic;
+    margin: 10px 0;
+}
+.span1{
+	font-style: normal;
+	font-weight: bolder;
+	color: rgb(0, 0, 0);
+}
+
+/* block 3 */
+section h2.why-shop {
+    color: #092635;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+section h2.why-shop::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background-color: #092635;
+}
+
+section ul.why-shop-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li.why-shop-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+section li.why-shop-item::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #092635;
+    font-size: 1.5em;
+    margin-top: 3px;
+}
+
+element.style {
+    background: #9EC8B9;
+}

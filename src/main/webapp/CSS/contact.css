@@ -1,0 +1,217 @@
+/* Start Of the CSS of the NAV BAR */
+@charset "UTF-8";
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #9EC8B9;
+    color: #092635;
+}
+
+.contact-container {
+	margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.contactUs {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(image/image5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px rgba(1, 205, 66, 0.5);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    
+    justify-content: space-between;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(1, 2, 14, 0.3);
+}
+
+.team-members {
+    flex: 1;
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: #5C8374;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(image/image6.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-members h2 {
+    color: white;
+    font-size: 38px;
+    text-shadow: 2px 2px 4px rgba(1, 205, 66, 0.5);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    
+}
+
+.team-list {
+    list-style-type:disc;
+    padding: 0;
+}
+
+.team-list li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(210, 221, 8, 0.775);
+}
+
+.company-info p {
+    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(101, 231, 25, 0.59);
+}
+
+.company-info p i {
+    margin-right: 5px;
+    font-size: 21px;
+    color: #e82c2c;
+}
+
+/* --------------------------------- */
+
+.body2 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9EC8B9;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.team-members {
+    flex: 1;
+}
+
+.team-members h2 {
+    font-size: 24px;
+    color: #092635;
+    margin-bottom: 20px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+/* design ofimages */
+
+.member-info p {
+    color: #666;
+}
+
+.user-query {
+    flex: 1;
+    background-image: url('image/imag4.jpg.png'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Set text color to white or a suitable contrast color */
+}
+
+.user-query h2 {
+    font-size: 24px;
+    color: #092635;
+    margin-bottom: 20px;
+}
+
+label,
+input,
+textarea,
+button {
+    color: #092635;
+    font-weight: 150; /* Set text color to white or a suitable contrast color */
+}
+
+/* Add additional styles as needed */
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #092635;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #053649;
+}
+/* new ones */
+/* Add these styles to your existing stylesheet */
+.company-info p{
+    font-size: large;
+}
+
+.fas{
+    height: 17px;
+}
+
+.contactUs{
+    display: flex;
+
+}
+

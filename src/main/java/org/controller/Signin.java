@@ -1,7 +1,7 @@
 package org.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+//import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -22,29 +22,31 @@ public class Signin extends HttpServlet {
 		
 		String lemail=request.getParameter("lemail");
 		String lpass=request.getParameter("lpass");
-		
+		request.setAttribute("signin_status", false);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("indexHeader.jsp");
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			PrintWriter out=response.getWriter();
+//			PrintWriter out=response.getWriter();
 			try {
 				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecom", "root", "1721");
 				PreparedStatement ps=con.prepareStatement("select name from user where email=? and password=?");
 				ps.setString(1, lemail);
 				ps.setString(2, lpass);
-				
 				ResultSet rs =ps.executeQuery();
 				if(rs.next()) {
-					RequestDispatcher rd=request.getRequestDispatcher("indexHeader.jsp");
-					rd.forward(request, response);
+					request.setAttribute("signin_status", true);
+//					response.sendRedirect("indexHeader.jsp");
 				}else {
-					out.println("<font color=red size=18> Sign In failed!!<br>");
+					 request.setAttribute("signin_status", false);
 				}
+		        dispatcher.forward(request, response);
 			} catch (SQLException e) {
-				e.printStackTrace();
+				dispatcher.forward(request, response);
 			}
 		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+			dispatcher.forward(request, response);
 		}
+		dispatcher.forward(request, response);
 	}
 
 }
