@@ -29,7 +29,7 @@ public class Signup extends HttpServlet {
 //			PrintWriter out=response.getWriter();
 			try {
 				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecom", "root", "1721");
-				PreparedStatement ps=con.prepareStatement("insert into user values (?, ?, ?)");
+				PreparedStatement ps=con.prepareStatement("insert into euser values (?, ?, ?)");
 				ps.setString(1, rname);
 				ps.setString(2, rmail);
 				ps.setString(3, rpass);

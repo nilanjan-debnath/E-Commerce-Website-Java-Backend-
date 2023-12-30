@@ -28,7 +28,7 @@
                     <li>Nilanjan Debnath</li>
                     <li>Avijit Hira</li>
                     <li>Aman Kumar</li>
-                    <li>Paras </li>
+                    <li>Paras Yadav</li>
                     <!-- Add more team members as needed -->
                 </ul>
 
