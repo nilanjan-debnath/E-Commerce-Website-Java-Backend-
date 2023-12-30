@@ -21,9 +21,9 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" name="rname" placeholder="Name" />
-                <input type="email" name="remail" placeholder="Email" />
-                <input type="password" name="rpass" placeholder="Password" />
+                <input type="text" name="rname" placeholder="Name" required="required" />
+                <input type="email" name="remail" placeholder="Email" required="required" />
+                <input type="password" name="rpass" placeholder="Password" required="required" />
                 <button type="submit">Sign Up</button>
             </form>
         </div>
@@ -36,8 +36,8 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" name="lemail" placeholder="Email" />
-                <input type="password" name="lpass" placeholder="Password" />
+                <input type="email" name="lemail" placeholder="Email" required="required" />
+                <input type="password" name="lpass" placeholder="Password" required="required" />
                 <a href="#">Forgot your password?</a>
                 <button type="submit">Sign In</button>
             </form>

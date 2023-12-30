@@ -28,7 +28,7 @@ public class Signin extends HttpServlet {
 //			PrintWriter out=response.getWriter();
 			try {
 				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecom", "root", "1721");
-				PreparedStatement ps=con.prepareStatement("select name from user where email=? and password=?");
+				PreparedStatement ps=con.prepareStatement("select name from euser where email=? and password=?");
 				ps.setString(1, lemail);
 				ps.setString(2, lpass);
 				

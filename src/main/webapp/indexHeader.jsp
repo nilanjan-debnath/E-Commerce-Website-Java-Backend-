@@ -19,6 +19,7 @@
 	<div class="login-btn" ><a id="sign_txt" href="SignInUp.jsp" >Sign In / Up</a></div>
 </div>
 </body>
+
 <script>
 	
 	function signout_check(){
